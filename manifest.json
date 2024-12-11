@@ -1,0 +1,27 @@
+{
+  "name": "Metric-only Pie Chart",
+  "description": "Pie chart that uses multiple metrics as slices.",
+  "resources": ["index.html"],
+  "logoUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/table-chart.png",
+  "supportedInteractions": ["FILTER"],
+  "components": [
+    {
+      "id": "metric_only_pie",
+      "file": "index.html",
+      "config": {
+        "data": {
+          "concepts": [
+            {
+              "id": "metrics",
+              "label": "Metrics",
+              "type": "METRIC",
+              "required": true,
+              "allowMultiple": true,
+              "min": 1
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
